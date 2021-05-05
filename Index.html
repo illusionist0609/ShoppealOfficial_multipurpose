@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="icon" href="./Images/S_logo.jpeg" type="image/icon type">
+  <link rel="stylesheet" href="./CSS/Style.css">
+  <link rel="stylesheet" href="./CSS/style2.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+  <title>ShoppeaL Official</title>
+</head>
+
+<body>
+  <div id="home"></div>
+  <!-- HEADER SECTION START -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark ">
+    <div class="container-fluid col-md-11">
+      <img src="./Images/S_logo.jpeg" alt="" width="30" height="30" class="d-inline-block align-text-top me-2">
+      <a class="navbar-brand text-white" href="#">Shop<span class="navbar-brand text-warning" href="#">peaL</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#what-we-do">Feature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://www.shoppeal.in/" target="_blank">Shoe Store</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./template.html" target="_blank">Template Store</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./enterprises.html" target="_blank">ShoppeaL Enterprises</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./covid.html" target="_blank">Let's Get Vaccinated</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#review">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <a href="./template.html">
+          <button type="button" class="btn btn-success btn-sm me-2"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="white" class="bi bi-laptop-fill" viewBox="0 0 16 16">
+              <path
+                d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+            </svg> Shoppeal Template</button></a>
+        <a href="http://www.shoppeal.in" target="_blank">
+          <button type="button" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal"
+            data-bs-target="#shopModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
+              class="bi bi-shop" viewBox="0 0 16 16">
+              <path
+                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+            </svg> Shoe Store</button>
+          </a>
+        <a href="./covid.html">
+          <button type="button" class="btn btn-danger btn-sm "><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="white" class="bi bi-app-indicator" viewBox="0 0 16 16">
+              <path
+                d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" />
+              <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            </svg> Let's Get Vaccinated</button>
+        </a>
+
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="shopModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="shopModalLabel">SHOP NOW</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Lets Buy a Shoe and accessories from ShoppeaL Store</h5>
+          <a href="http://www.shoppeal.in">
+            <button type="button" class="btn btn-success btn-sm me-2">Shop Now!</button>
+          </a>
+          <hr>
+          <h5>Lets Download Free Web Templates</h5>
+          <a href="./template.html">
+            <button type="button" class="btn btn-success btn-sm me-2">Download Now</button>
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HEADER SECTION END -->
+
+  <!-- HEAD CONTAINER SECTION START -->
+  <div class="container contain-box col-xxl-8 px-4 shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="row flex-lg-row-reverse  align-items-center g-2 py-2">
+      <div class="col-12 col-sm-12 col-lg-6">
+        <div class="main-content">
+
+          <img src="./Images/aa.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500"
+            height="500" loading="lazy">
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-center"> <a href="" class="typewrite" data-period="2000"
+            data-type='[ "Welcome to Shoppeal Official", "Buy a shoe from Store" , "Download free Web Template", "Shopeal Enterrises", "Lets get vaccinated"]'>
+            <span class="wrap"></span>
+          </a></h1>
+        <p class="lead text-center"> <Strong>Now get all of your work easy in few step through <Strong
+              class="text-danger"> ShoppeaL. </Strong> </Strong></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <a href="http://www.shoppeal.in">
+            <button type="button" class="btn btn-primary px-4 me-md-2">Shop Now!</button>
+          </a>
+          <a href="./covid.html">
+            <button type="button" class="btn btn-outline-dark px-4">Let's Get Vaccinated</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <!-- HEAD CONTAINER SECTION START -->
+
+  <!-- FEATURE CONTAINER SECTION START -->
+  <section id="what-we-do">
+    -<div class="container col-11">
+      <h2 class="section-title mb-2 h1"><strong>Let's Know ShoppeaL Features</strong></h2>
+      <p class="text-center text-muted h5">Here is an ShoppeaL Top Features!</p>
+      <div class="row mt-5">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+          <div class="card">
+            <div class="card-block block-1">
+              <h3 class="card-title text-success">FASTEST DELIVERY</h3>
+              <p class="card-text">Shoppeal Provides Fastest Delivery in metro cities.</p>
+              <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more"><i
+                  class="fa fa-angle-double-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+          <div class="card">
+            <div class="card-block block-2">
+              <h3 class="card-title text-success">PREMIUM</h3>
+              <p class="card-text">Shoppeal Provides Premium Quality Products.</p>
+              <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more"><i
+                  class="fa fa-angle-double-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+          <div class="card">
+            <div class="card-block block-3">
+              <h3 class="card-title text-success">Let's Get vaccinated</h3>
+              <p class="card-text">We help you to Book your vaccination slot in your nearby center</p>
+              <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more"><i
+                  class="fa fa-angle-double-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+          <div class="card">
+            <div class="card-block block-4">
+              <h3 class="card-title text-success">SECURE PAYMENT</h3>
+              <p class="card-text">Shoppeal Provides you safe and Secure Payment.</p>
+              <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more"><i
+                  class="fa fa-angle-double-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+          <div class="card">
+            <div class="card-block block-5">
+              <h3 class="card-title text-success">ShoppeaL Templates</h3>
+              <p class="card-text">Now download your favourite Web templates from shoppeal free</p>
+              <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more"><i
+                  class="fa fa-angle-double-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+          <div class="card">
+            <div class="card-block block-6">
+              <h3 class="card-title text-success">ALL INDIA SHIPPING</h3>
+              <p class="card-text">Shoppeal Provides Free delivery in 20,000+ Pincode.
+              </p>
+              <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more"><i
+                  class="fa fa-angle-double-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURE CONTAINER SECTION START -->
+
+  <section class="portfolio" id="portfolio">
+    <div class="container  col-xxl-8 px-4 py-4 shadow-lg p-3 mb-5 bg-white rounded my-5">
+      <div class="row  ">
+
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="gallery-title text-success">Product Gallery</h1>
+        </div>
+
+        <div align="center">
+          <button type="button" class="filter-button btn-outline-success" data-filter="all">All</button>
+          <button type="button" class="filter-button btn-outline-success" data-filter="category1">Shoe's</button>
+          <button type="button" class="filter-button btn-outline-success" data-filter="category2">Accessories</button>
+          <button type="button" class="filter-button btn-outline-success" data-filter="category3">Templates</button>
+          <!-- <button class="filter-button text-success" data-filter="all">All</button>
+          <button class="filter-button text-success" data-filter="category1">Shoe</button>
+          <button class="filter-button text-success" data-filter="category2">Accessories</button>
+          <button class="filter-button text-success" data-filter="category3">Templates</button> -->
+        </div>
+
+        <br />
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category1">
+          
+            <img class="img-fluid"  src="./Images/Product_Image/nike01.jpg" />
+            
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category2">
+          <a class="fancybox" rel="ligthbox" href=" ">
+            <div class="card">
+              
+            <img class="card-img-top" alt=""   src="./Images/Product_Image/w7.jpeg" />
+            </div>
+            <div class='img-info'>
+              <h4>Image Title 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category3">
+          
+            <img class="img-fluid" alt="" src="./Images/Thumbnail/Template20.png" />
+           
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category1">
+         
+            <img class="img-fluid" alt="" src="./Images/Product_Image/nike06.jpeg" />
+            
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category2">
+          
+            <img class="img-fluid" alt="" src="./Images/Product_Image/w5.jpeg" />
+           
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6  col-4 filter category3">
+         
+            <img class="img-fluid" alt="" src="./Images/Thumbnail/Template16.png" />
+           
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category1">
+         
+            <img class="img-fluid" alt="" src="./Images/Product_Image/g4.jpeg" />
+          
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category2">
+          
+            <img class="img-fluid" alt="" src="./Images/Product_Image/w2.jpeg" />
+           
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category3">
+        
+            <img class="img-fluid" alt="" src="./Images/Thumbnail/Template14.png" />
+            
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category1">
+         
+            <img class="img-fluid" alt="" src="./Images/Product_Image/nike.jpeg" />
+            
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category2">
+         
+            <img class="img-fluid" alt="" src="./Images/Product_Image/w3.jpeg" />
+           
+          </a>
+        </div>
+
+        <div class="gallery_product col-sm-3 col-xs-6 col-4 filter category3">
+          
+            <img class="img-fluid" alt="" src="./Images/Thumbnail/Template13.png" />
+            
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="products">
+    <div class="container col-11 col-md-11">
+      <h2 class="pb-2 border-bottom text-success"><strong>ShoppeaL Products
+        </strong></h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+
+                <img class="pic-1" src="./Images/Product_Image/nike.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/nike02.jpeg">
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="https://www.shoppeal.in/shoppeal/nike-airforce-1/8369131425" target="_blank" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+               
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://www.shoppeal.in/shoppeal/nike-airforce-1/8369131425" target="_blank"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Nike Airforce 1</a></h3>
+              <div class="price"><span>₹3999/-</span>₹2200/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="./Images/Product_Image/nike03.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/nike04.jpeg">
+
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="https://www.shoppeal.in/shoppeal/adidas-yeezy-boost-700/6053525583" target="_blank" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+               
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://www.shoppeal.in/shoppeal/adidas-yeezy-boost-700/6053525583"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Yeezy Boost 700 v3</a></h3>
+              <div class="price">₹2999/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="./Images/Product_Image/nike05.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/nike06.jpeg">
+
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="https://www.shoppeal.in/shoppeal/airjordan-3--cool-grey-/6474972692" target="_blank" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://www.shoppeal.in/shoppeal/airjordan-3--cool-grey-/6474972692"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Nike Air Jordan 3 </a></h3>
+            
+              <div class="price"><span>₹3999/-</span>₹2999/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="./Images/Product_Image/nike07.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/nike08.jpeg">
+
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="https://www.shoppeal.in/shoppeal/adidas-sply-350/5332475590" target="_blank" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+              
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://www.shoppeal.in/shoppeal/adidas-sply-350/5332475590"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Yeezy 350 V2</a></h3>
+              <div class="price">₹2299/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+        <div class="container col-11 col-md-11 py-2">
+
+
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+
+                <img class="pic-1" src="./Images/Thumbnail/Template20.png">
+                <img class="pic-2" src="./Images/Thumbnail/Template20.png">
+              </a>
+            
+              <ul class="social">
+                <li><a href="./Template/woodo/index.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+               
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://firebasestorage.googleapis.com/v0/b/shoppeal-store.appspot.com/o/Woodo%20Free%20Website%20Template%20-%20Free-CSS.com.zip?alt=media&token=1c48b8a1-f55b-44a3-accb-cc2fd1af81cb"> Download </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Ecommerce Template</a></h3>
+              <div class="price"><span>$28.00</span>Free</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+
+                <img class="pic-1" src="./Images/Thumbnail/Template19.png">
+                <img class="pic-2" src="./Images/Thumbnail/Template19.png">
+              </a>
+            
+              <ul class="social">
+                <li><a href="./Template/templatemo_544_comparto/index.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+               
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://firebasestorage.googleapis.com/v0/b/shoppeal-store.appspot.com/o/Comparto%20Free%20Website%20Template%20-%20Free-CSS.com.zip?alt=media&token=4eb7b7ad-91e8-48f5-85b8-f7945e9aabe7"> Download </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Blog Template</a></h3>
+              <div class="price"><span>$28.00</span>Free</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+
+                <img class="pic-1" src="./Images/Thumbnail/Template18.png">
+                <img class="pic-2" src="./Images/Thumbnail/Template18.png">
+              </a>
+            
+              <ul class="social">
+                <li><a href="./Template/templatemo_543_breezed/index.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+               
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://firebasestorage.googleapis.com/v0/b/shoppeal-store.appspot.com/o/Breezed%20Free%20Website%20Template%20-%20Free-CSS.com.zip?alt=media&token=bf7fa8f5-fe0e-4052-9ce7-93f20baa2fc5"> Download </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Portfolio template</a></h3>
+              <div class="price"><span>$  8.00</span>Free</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+
+                <img class="pic-1" src="./Images/Thumbnail/Template17.png">
+                <img class="pic-2" src="./Images/Thumbnail/Template17.png">
+              </a>
+            
+              <ul class="social">
+                <li><a href="./Template/siopp/index.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+               
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://firebasestorage.googleapis.com/v0/b/shoppeal-store.appspot.com/o/Siopp%20Free%20Website%20Template%20-%20Free-CSS.com.zip?alt=media&token=f4fb6ec1-c44d-4fa3-b343-6ed344d1b05a"> Download </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Tempor Landing Page</a></h3>
+              <div class="price"><span>$12.00</span>Free</div>
+            </div>
+          </div>
+        </div>
+         <div class="container col-11 col-md-11 py-2">
+
+
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="./Images/Product_Image/w3.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/w4.jpeg">
+
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="https://www.shoppeal.in/shoppeal/categories/accessories/7078372243" target="_blank" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://www.shoppeal.in/shoppeal/categories/accessories/7078372243" target="_blank"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Emporio Armani</a></h3>
+              <div class="price">₹1999/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="./Images/Product_Image/w5.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/w6.jpeg">
+
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="https://www.shoppeal.in/shoppeal/categories/accessories/7078372243" target="_blank" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://www.shoppeal.in/shoppeal/categories/accessories/7078372243" target="_blank"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Fossil For Men's</a></h3>
+              <div class="price">₹1199/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="./Images/Product_Image/w7.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/w8.jpeg">
+
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="https://www.shoppeal.in/shoppeal/categories/accessories/7078372243" target="_blank" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                </ul>
+                <a class="add-to-cart" href="https://www.shoppeal.in/shoppeal/categories/accessories/7078372243" target="_blank"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">IWC For Men's</a></h3>
+              <div class="price">₹3999/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 col-sm-6">
+          <div class="product-grid">
+            <div class="product-image">
+              <a href="#" class="image">
+                <img class="pic-1" src="./Images/Product_Image/w9.jpeg">
+                <img class="pic-2" src="./Images/Product_Image/w10.jpeg">
+
+              </a>
+              <span class="product-sale-label">sale!</span>
+              <ul class="social">
+                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                <li><a href="#" data-tip="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+              </ul>
+              <div class="product-rating">
+                <ul class="rating">
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  
+                </ul>
+                <a class="add-to-cart" href="#"> ADD TO CART </a>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="title"><a href="#">Jeep For Men's</a></h3>
+              <div class="price">₹2999/- Free Shipping</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section id="review">
+    <div class="container contain-box col-xxl-8 px-4 py-5 shadow-lg p-3 mb-5 bg-white rounded my-5">
+      <div class="container col-11 col-md-11 py-2">
+
+
+      </div>
+      <div class="testimonial1 py-5 bg-light" id="review">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-8 text-center">
+              <h4 class="my-3">Check what our Customers are Saying</h4>
+              <h6 class="subtitle font-weight-normal">You can relay on our amazing features list and also our customer
+                services will be great experience for you without doubt</h6>
+            </div>
+          </div>
+          <!-- Row  -->
+          <div class="owl-carousel owl-theme testi1 mt-4">
+            <!-- item -->
+            <div class="item">
+              <div class="card card-shadow border-0 mb-4">
+                <div class="card-body">
+                  <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img
+                      src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/testimonial/2.jpg" alt="wrapkit"
+                      class="thumb-img position-absolute rounded-circle" /> Dakshata Singh</div>
+                  <h5 class="font-weight-light">You can relay on our amazing features list and also our customer
+                    services
+                    will be great experience. You can relay on our amazing features.</h5>
+                  <span class="devider d-inline-block my-3"></span>
+                  <div class="product-rating">
+                    <ul class="rating">
+                      <li class="fas fa-star text-warning"></li>
+                       <li class="fas fa-star text-warning"></li>
+                       <li class="fas fa-star text-warning"></li>
+                        <li class="fas fa-star text-warning"></li>
+                        <li class="fas fa-star text-warning"></li>
+                     
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="item">
+              <div class="card card-shadow border-0 mb-4">
+                <div class="card-body">
+                  <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img
+                      src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/testimonial/1.jpg" alt="wrapkit"
+                      class="thumb-img position-absolute rounded-circle" /> Sudhanshu Singh</div>
+                  <h5 class="font-weight-light">Great experience with this website consume time as well as money.</h5>
+                  <span class="devider d-inline-block my-3"></span>
+                  <div class="product-rating">
+                    <ul class="rating">
+                      <li class="fas fa-star text-warning"></li>
+                       <li class="fas fa-star text-warning"></li>
+                       <li class="fas fa-star text-warning"></li>
+                        <li class="fas fa-star text-warning"></li>
+                        <li class="fas fa-star text-warning"></li>
+                     
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="item">
+              <div class="card card-shadow border-0 mb-4">
+                <div class="card-body">
+                  <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img
+                      src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/testimonial/3.jpg" alt="wrapkit"
+                      class="thumb-img position-absolute rounded-circle" /> Shalini Singh</div>
+                  <h5 class="font-weight-light">Quick Service & fast Delivery. Product Quality is also an Excellent.Best Website provide Free web template with source code.</h5>
+                  <span class="devider d-inline-block my-3"></span>
+                  <div class="product-rating">
+                    <ul class="rating">
+                      <li class="fas fa-star text-warning"></li>
+                       <li class="fas fa-star text-warning"></li>
+                       <li class="fas fa-star text-warning"></li>
+                        <li class="fas fa-star text-warning"></li>
+                        <li class="fas fa-star text-warning"></li>
+                     
+                    </ul>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+           
+            <!-- item -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container contain-box col-xxl-8 px-4 shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="row flex-lg-row-reverse  align-items-center g-2 py-2">
+      <div class="col-12 col-sm-12 col-lg-6">
+        <div class="">
+
+          <img src="./Images/covid.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500"
+            height="500" loading="lazy">
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-center"> Let's Get Vaccinated Free!</h1>
+        <p class="lead text-center"> <Strong>We help you to get Book your vaccination slot through <Strong class="text-danger">
+              ShoppeaL. </Strong>we provide free slot booking service </Strong></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <a href="./covid.html" target="_blank">
+            <button type="button" class="btn btn-primary px-4 me-md-2">Book Now!</button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div <section>
+  <div class="container">
+    <!-- Section: Contact v.1 -->
+    <section>
+
+      <!-- Section heading -->
+      <h2 class="section-title mb-2 h1">Contact US</h2>
+      <p class="text-center text-muted h5">Drop a message to us we will get back to you within 24hrs!</p>
+
+      <!-- Grid row -->
+      <div class="row mt-5">
+
+        <!-- Grid column -->
+        <div
+          class="col-lg-5 mb-lg-0 mb-4 container contain-box col-xxl-8 px-4 py-4 shadow-lg p-3 mb-5 bg-white rounded">
+
+          <!-- Form with header -->
+          <div class="card" id="contact">
+
+            <div class="card-body ">
+              <!-- Header -->
+              <div class="form-header blue accent-1">
+                <h3 class="mt-2 text-center text-success"><i class="fas fa-envelope"></i> Write to us:</h3>
+              </div>
+              <p class="dark-grey-text text-center">We'll write rarely, but only the best content.</p>
+              <!-- Body -->
+              <form action="https://formspree.io/f/xjvjgeqj" method="POST">
+                <div class="md-form">
+                  <i class="fas fa-user prefix grey-text"></i> <label for="form-name">Your name</label>
+                  <input type="text" name="name" id="form-name" class="form-control">
+
+                </div>
+                <div class="md-form py-2">
+                  <i class="fas fa-envelope prefix grey-text "></i> <label for="form-email">Your email</label>
+                  <input type="text" name="email" id="form-email" class="form-control">
+
+                </div>
+                <div class="md-form py-2">
+                  <i class="fas fa-tag prefix grey-text"></i> <label for="form-Subject">Subject</label>
+                  <input type="text" id="form-Subject" name="subject" class="form-control">
+
+                </div>
+                <div class="md-form py-2">
+                  <i class="fas fa-pencil-alt prefix grey-text"></i> <label for="form-text">Send message</label>
+                  <textarea id="form-text" name="message" class="form-control md-textarea" rows="3"></textarea>
+
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Form with header -->
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-7">
+
+          <!--Google map-->
+          <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+            <iframe src="https://maps.google.com/maps?q=Mumbai&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              style="border:0" allowfullscreen></iframe>
+          </div>
+          <!-- Buttons-->
+          <div class="row text-center">
+            <div class="col-md-4">
+              <a class="btn-floating blue accent-1">
+                <i class="fas fa-map-marker-alt"></i>
+              </a>
+              <p>Kalyan, 421306</p>
+              <p class="mb-md-0">Maharashtra</p>
+            </div>
+            <div class="col-md-4">
+              <a class="btn-floating blue accent-1">
+                <i class="fas fa-phone"></i>
+              </a>
+              <p>+ 91 89287 98738</p>
+              <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+            </div>
+            <div class="col-md-4">
+              <a class="btn-floating blue accent-1">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <p>shoppealofficial@gmail.com</p>
+              <p class="mb-0">Sudhanshu Singh</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </section>
+  </div>
+
+
+
+  </section>
+  <!-- Section: Contact v.1 -->
+
+  <footer class="text-center">
+    <div class="cotnainer">
+      <h4>Follow Us</h4>
+      <div class="social-media">
+        <a href="https://api.whatsapp.com/message/M4GE3TNBD6DUD1" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/shoppeal.in_shoes/?r=nametag" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sudhanshu-singh-140b541b3/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/illusionist0609" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <h6>Copyright &copy; 2021. All Rights Reserved. www.shoppeal.in</h6>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="./java.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+
+
+
+</body>
+
+</html>

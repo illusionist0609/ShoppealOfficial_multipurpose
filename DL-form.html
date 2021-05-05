@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="icon" href="./Images/licence.png" type="image/icon type">
+  <link rel="stylesheet" href="./CSS/Style.css">
+  <link rel="stylesheet" href="./CSS/style2.css">
+  <link rel="stylesheet" href="./CSS/adhar.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  <!------ Include the above in your HEAD tag ---------->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+  <title>LL/DL Service</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark ">
+        <div class="container-fluid col-md-11">
+          <img src="./Images/licence.png" alt="" width="30" height="30" class="d-inline-block align-text-top me-2">
+          <a class="navbar-brand text-white" href="#">Shop<span class="navbar-brand text-warning" href="#">peaL</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  "  href="./adhar-form.html">Adharcard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./pan-new.html">Pancard</a>
+              </li>
+             
+           
+               
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="./DL-form.html">Driving Licence</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./train-flight.html">Book Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="./Index.html">Shoppeal Official</a>
+              </li>
+            </ul>
+    
+            <a href="./covid.html" target="_blank">
+              <button type="button" class="btn btn-success btn-sm me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="white" class="bi bi-app-indicator" viewBox="0 0 16 16">
+                <path
+                d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" />
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              </svg> Let's Get Vaccinated</button>
+            </a>
+           <a href="http://www.shoppeal.in">
+            <button type="button" class="btn btn-warning btn-sm me-2" data-bs-toggle="modal"
+            data-bs-target="#shopModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
+            class="bi bi-shop" viewBox="0 0 16 16">
+            <path
+            d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+          </svg> Shop Now</button>
+        </a>
+        <a href="tel:892-879-8738">
+          <button type="button" class="btn btn-danger btn-sm " href="tel:892-879-8738"> Call Us : +91 8928798738</button>
+        </a>
+          </div>
+        </div>
+        </div>
+    
+      </nav>
+      <div class="container contain-box col-xxl-8 px-4 py-4 shadow-lg p-3 mb-5 bg-white rounded ">
+
+        <div class="container" id="book-slot">
+          <h2 class="section-title mb-2 h1 text-center text-white"><strong>Update Your Driving Licence</strong></h2>
+          <p class="text-center text-muted h5">Submit Your Data to Update!</p>
+          <p class="text-center text-danger h5">Kindly upload the all valid document proof in one pdf for eg: (if you have to update address  ,then submit the current address document of address proof)Upload your DL also</p>
+          <div class="container  col-xxl-8 px-4 py-4 shadow-lg p-3 mb-5 bg-white rounded my-5">
+          <form  action="https://formspree.io/f/xjvjgeqj" 
+          method="POST">
+              <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control " placeholder="First name" aria-label="First name" >
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="DL Number" aria-label="DL Number">
+                  </div>
+                  <div class="col">
+                    <input type="Number" class="form-control" placeholder="Mobile Number" aria-label="Mobile Number">
+                  </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="City" aria-label="City">
+                  </div>
+                  <div class="col-sm">
+                    <input type="text" class="form-control" placeholder="State" aria-label="State">
+                  </div>
+                  <div class="col-sm">
+                    <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                  </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="Beneficiary Name as per Photo ID card" aria-label="Beneficiary Name as per Photo ID card">
+                  </div>
+                  <div class="col-auto">
+                     
+                      <select class="form-select" id="autoSizingSelect">
+                        <option selected>Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-auto">
+                     
+                      <select class="form-select" id="autoSizingSelect">
+                        <option selected>Choose Service</option>
+                        <option value="1">update address</option>
+                        <option value="2">update name</option>
+                        <option value="3">update gender</option>
+                        <option value="4">update dob</option>
+                      </select>
+                    </div>
+                  <div class="col-sm">
+                    <input type="date" class="form-control" placeholder="Date of Birth (DDMMYY)" aria-label="Date">
+                  </div>
+                  <br>
+                  <div class="col-6">
+                    <input type="text-area" class="form-control" placeholder="Enter the details which you have to Update" aria-label="data">
+                  </div>
+                  <div class="input-group mb-3 col-6">
+                    <input type="file" class="form-control" id="inputGroupFile02" placeholder="Upload Document Proof">
+                    
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    
+                  </div>
+                </div>
+                .
+                <button type="submit" class="btn btn-success my-5">Submit Data</button>
+<a href="tel:892-879-8738">
+  <button type="button" class="btn btn-danger btn-sm " href="tel:892-879-8738">Call Us : +91 8928798738 If you have to Apply For New DL</button>
+</a>
+
+              </form>
+          </div>
+        </div>
+      </div>
+      </section>
+      <footer class="text-center">
+        <div class="cotnainer">
+          <h4>Follow Us</h4>
+          <div class="social-media">
+            <a href="https://api.whatsapp.com/message/M4GE3TNBD6DUD1" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/shoppeal.in_shoes/?r=nametag" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sudhanshu-singh-140b541b3/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/illusionist0609" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+    
+          <h6>Copyright &copy; 2021. All Rights Reserved. www.shoppeal.in</h6>
+        </div>
+      </footer>
+    
+      
+        <!-- Optional JavaScript; choose one of the two! -->
+      
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"></script>
+        <script src="./java.js"></script>
+        <script src="./CSS/enterprises.js"></script>
+      
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+          -->
+      
+      
+       
+      </body>
+      
+      </html>
